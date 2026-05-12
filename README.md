@@ -1,17 +1,35 @@
 # Sales Representative Allocation & Quota Attainment
 
-A reference implementation of a sales-rep allocation and quota-attainment
-analytical model for a multi-country regional cluster. The model unifies
-billings from three regional ERPs with a quota plan delivered as a
-spreadsheet, and exposes a single view aligned to the structure expected by
-sales-incentive and pipeline dashboards.
+This project presents a sales analytics model designed to unify multi-source billing data and align it with quota planning to support performance tracking across regions and sales representatives.
 
-This repository is a **generic, anonymized portfolio version** of a
-production analytics codebase. All identifiers — table names, column names,
-business units, geographies, sales-rep names, account codes, vendor systems,
-currencies — have been replaced with neutral equivalents. The intent is to
-showcase the **modeling discipline, source-isolation pattern, and rep
-allocation reasoning**, not any proprietary content.
+It consolidates multiple ERP systems and externally managed quota datasets into a single analytical surface, enabling:
+
+- Sales rep attribution across heterogeneous sources
+- Performance tracking against targets
+- Regional and cross-source reporting
+- Alignment between finance and commercial perspectives
+
+All identifiers and business rules have been fully anonymized. The focus of this repository is architecture, data modeling and allocation logic.
+``# Sales Representative Allocation & Quota Attainment
+
+This project presents a sales analytics model designed to unify multi-source billing data and align it with quota planning to support performance tracking across regions and sales representatives.
+
+It consolidates multiple ERP systems and externally managed quota datasets into a single analytical surface, enabling:
+
+- Sales rep attribution across heterogeneous sources
+- Performance tracking against targets
+- Regional and cross-source reporting
+- Alignment between finance and commercial perspectives
+
+All identifiers and business rules have been fully anonymized. The focus of this repository is architecture, data modeling and allocation logic.
+
+## Key Highlights
+
+- Multi-source sales rep allocation logic across heterogeneous ERPs
+- Integration of operational data with externally managed quota plans (Excel → Prep)
+- Canonical customer master for rep assignment
+- Unified fact view combining actuals + targets
+- Scalable and auditable allocation model
 
 ---
 
